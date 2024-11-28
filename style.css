@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header section */
+  header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Main layout with sections */
+  .content-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Left section: Personal Info and Skills */
+  .info-section {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .profile-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about {
+    margin-bottom: 20px;
+  }
+  
+  .info h3, .skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 8px 0;
+  }
+  
+  .skills ul {
+    padding-left: 20px;
+  }
+  
+  /* Right section: Logos */
+  .logos-section {
+    flex: 1;
+    max-width: 35%;
+  }
+  
+  .logos-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-section, .logos-section {
+      max-width: 100%;
+    }
+  
+    .logo-grid {
+      justify-content: center;
+    }
+  }
+  
